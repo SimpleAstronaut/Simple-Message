@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./vue.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./main.css">
     <title>简单留言板</title>
 </head>
 <body>
     <h1 id="h1">简单留言板-测试版</h1>
-    <div id="app" class="demo">
-        <p>{{ message }}</p>
+    <button id="re">刷新</button>
+    <div id="msg">
+        <p>test</p>
     </div>
-    <script src="./main.js"></script>
+    显示名称:
+    <input id="user" type="text" required />
+    <br>
+    留言内容:
+    <input id="text" type="text" required/>
+    <br>
+    <button id="send" onclick="send()">发送</button>
 </body>
 </html>

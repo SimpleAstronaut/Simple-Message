@@ -54,7 +54,7 @@ app.get('/add', function(req, res) {
         })
     })
 
-    res.send('添加留言接口');
+    res.send('1');
     ret = Date()+"-"+req.ip+"-添加留言请求";
     log(ret);
     console.log(ret);
